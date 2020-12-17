@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/titlebar"
+        style="@style/TitleBar_style_large"
+        
+        android:text="@string/inpremisislogin" />
+    
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center" >
+       
+         
+         
+        <Spinner
+            android:id="@+id/login_spiner_company"
+            style="@style/terytory_Spinner_Style"
+            android:layout_below="@+id/login_spiner_company"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:spinnerMode="dialog" />
+
+        <EditText
+            android:id="@+id/inpremisis_login_username_et"
+            style="@style/EditTextStyle_large"
+            android:inputType="text|textPersonName"
+            android:background="@drawable/username"
+           
+            android:focusableInTouchMode="true"
+            android:layout_below="@+id/login_spiner_company"
+            android:hint="@string/user_name" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/inpremisis_login_password_et"
+            style="@style/EditTextStyle_large"
+            android:background="@drawable/password"
+            android:layout_below="@+id/inpremisis_login_username_et"
+           
+            android:focusableInTouchMode="true"
+            android:inputType="textPassword"
+             android:fontFamily="sans-serif"
+            android:hint="@string/user_password" >
+        </EditText>
+
+        <Button
+            android:id="@+id/inPremisis_login_button"
+            style="@style/actionbutton_style_changeorder_large"
+            android:layout_below="@+id/inpremisis_login_password_et"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:layout_marginTop="05dp"
+            android:text="@string/login" />
+
+       
+
+    </RelativeLayout>
+
+
+    
+
+</LinearLayout>

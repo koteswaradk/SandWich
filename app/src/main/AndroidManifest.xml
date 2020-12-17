@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yoobikwiti.sandwich"
+    android:versionCode="1"
+    
+    android:versionName="1.0" >
+
+    <preference name="AndroidXEnabled" value="true" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--  -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        
+        android:theme="@style/MyApp.Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.yoobikwiti.sandwich.LoginMain"
+            android:label="@string/app_name"
+            
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yoobikwiti.sandwich.SalesGirlsLogin" android:screenOrientation="portrait"  android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name="com.yoobikwiti.sandwich.InPremisisLogin" android:screenOrientation="portrait"  android:windowSoftInputMode="stateHidden">
+        </activity>
+        <!-- <activity android:name="com.yoobikwiti.sandwich.customerdetails.CustomerDetalsActivity" android:screenOrientation="portrait"  android:windowSoftInputMode="stateHidden">
+        </activity> -->
+        <activity android:name="com.yoobikwiti.sandwich.placeorchangeorder.PlaceOrChangeOrder" android:screenOrientation="portrait"  android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name="com.yoobikwiti.sandwich.synchdata.SynchData" android:screenOrientation="portrait"  android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name="com.yoobikwiti.sandwich.takeorder.TakeOrder" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+        </activity>
+         <activity android:name="com.yoobikwiti.sandwich.search.SalesGirlsSearch" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+        </activity>
+         <activity android:name="com.yoobikwiti.sandwich.search.InpremisisSearch" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name="com.yoobikwiti.sandwich.authenticate.Authenticate" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+        </activity>
+        
+        <activity android:name="com.yoobikwiti.sandwich.customerdetails.CustomerDetalsActivity" >
+            <meta-data android:name="android.app.searchable"
+              
+                   android:value="com.yoobikwiti.sandwich.customerdetails.SearchViewActivity" />   
+        </activity>
+       
+        <!-- android:name="android.app.default_searchable" -->
+        <!-- A Searchable activity, that handles the searches -->
+        <activity android:name="com.yoobikwiti.sandwich.customerdetails.SearchViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable1" />
+        </activity>
+
+        <!-- Activity that shows the country details -->
+        <activity android:name="com.yoobikwiti.sandwich.customerdetails.CountryActivity" android:screenOrientation="portrait"  android:windowSoftInputMode="stateHidden"/>
+
+        <!-- Content Provider to query sqlite database -->
+        <provider
+            android:name="com.yoobikwiti.sandwich.customerdetails.CountryContentProvider"
+            android:authorities="com.yoobikwiti.sandwich.customerdetails.CountryContentProvider"
+            android:exported="true" />
+
+        <receiver android:name="com.sms.smsbackendsend.SmsSentReceiver" >
+        </receiver>
+        <receiver android:name="com.sms.smsbackendsend.SmsDeliveredReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED" >
+                </action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

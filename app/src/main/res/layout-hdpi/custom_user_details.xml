@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+				    
+       <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="60"
+            android:singleLine="true"
+            android:text="name"
+            
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLength="60"
+            android:singleLine="true"
+           
+            android:text="company name"
+            android:textSize="15sp" />
+         <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLength="60"
+            android:singleLine="true"
+           
+            android:text="phone number"
+            android:textSize="15sp" />
+          <TextView
+            android:id="@+id/emailid_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLength="60"
+           
+            android:singleLine="true"
+            android:text="email id"
+            android:textSize="15sp" />
+        
+  
+    
+
+</LinearLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customer_details_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/titlebar"
+            style="@style/TitleBar_style"
+            android:text="@string/costomerdetails" />
+        <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="02dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/searchbuttonseletor" />
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="02dp"
+            android:layout_marginTop="05dp"
+            android:background="@drawable/homebuttonselection"
+            android:visibility="gone" />
+
+        
+        <ImageButton
+            android:id="@+id/button_synch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="05dp"
+            
+            android:background="@drawable/settingselection" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_search"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/titlebarsearch"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#E29334" />
+
+        <SearchView
+            android:id="@+id/searchview"
+           
+           	android:background="#FFEFEFEF"
+           	android:layout_width="fill_parent"
+           	android:layout_height="wrap_content"
+            android:queryHint="@string/search"
+            android:layout_marginTop="10dp"
+           
+            />
+        <!--
+         style="@style/EditTextStyle"
+         android:layout_width="fill_parent"
+            android:layout_height="40dp"
+             android:background="@drawable/etsearch"
+            android:gravity="center"
+             <ImageButton
+            android:id="@+id/button_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="02dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/searchicon" />
+        -->
+    </RelativeLayout>
+ <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+      
+        android:visibility="gone"
+        android:padding="5dp" >
+
+        <ImageButton
+            android:id="@+id/image_search_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/appicon"
+            android:text="@string/search_hint" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete"
+            style="@style/EditTextStyle_search"
+           android:dropDownWidth="300dp"
+            android:background="@null"
+            android:layout_gravity="center|center_vertical"
+            android:gravity="center"
+            android:hint="@string/search"
+            android:singleLine="true"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/calc_clear_txt_Prise"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="05dp"
+            android:background="@drawable/clear" />
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/abovescrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="325dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/firstname_et"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/first_name" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/lastname_et"
+                    style="@style/EditTextStyle"
+                    android:layout_below="@+id/firstname_et"
+                    android:hint="@string/last_name" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/telephonenumber_et"
+                    style="@style/EditTextStyle"
+                    android:layout_below="@+id/lastname_et"
+                    android:hint="@string/telephone"
+                    android:inputType="phone" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/cellphone_et"
+                    style="@style/EditTextStyle"
+                    android:layout_below="@+id/telephonenumber_et"
+                    android:hint="@string/cellphone"
+                    android:inputType="phone" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/company_et"
+                    style="@style/EditTextStyle"
+                    android:layout_below="@+id/cellphone_et"
+                    android:hint="@string/company"
+                    android:inputType="text" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/emailid_et"
+                    style="@style/EditTextStyle"
+                    android:layout_below="@+id/company_et"
+                    android:hint="@string/emailid"
+                    android:inputType="textEmailAddress" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/address_et"
+                    style="@style/EditTextStyle"
+                    android:layout_below="@+id/emailid_et"
+                    android:hint="@string/address"
+                    android:inputType="textEmailAddress" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/streetnumber_et"
+                    style="@style/EditTextStyle"
+                    android:layout_below="@+id/address_et"
+                    android:hint="@string/streetnumber"
+                    android:inputType="text" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/buildingnumber_et"
+                    style="@style/EditTextStyle"
+                    android:layout_below="@+id/streetnumber_et"
+                    android:hint="@string/buildingnumber"
+                    android:inputType="text" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/doornumber_et"
+                    style="@style/EditTextStyle"
+                    android:layout_below="@+id/buildingnumber_et"
+                    android:hint="@string/doornumber"
+                    android:inputType="text" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/floornumber_et"
+                    style="@style/EditTextStyle"
+                    android:layout_below="@+id/doornumber_et"
+                    android:hint="@string/floornumber"
+                    android:inputType="text" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/landmark_et"
+                    style="@style/EditTextStyle"
+                    android:layout_below="@+id/floornumber_et"
+                    android:hint="@string/landmark"
+                    android:inputType="text" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/deliverydescription_et"
+                    style="@style/EditTextStyle"
+                    android:layout_below="@+id/landmark_et"
+                    android:hint="@string/deliveryinstructions"
+                    android:inputType="text" >
+                </EditText>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_takeorder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+
+        <Button
+            android:id="@+id/button_takeorder"
+            style="@style/bottom_actionbutton_style"
+            android:text="@string/takeorder"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

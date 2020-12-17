@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/titlebar"
+            style="@style/TitleBar_style"
+            android:text="@string/selectorder" />
+
+        <ImageButton
+            android:id="@+id/button_home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="02dp"
+            android:layout_marginTop="05dp"
+            android:background="@drawable/homebuttonselection"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.yoobikwiti.sandwich.takeorder.MultiSpinner
+            android:id="@+id/multiSpinner"
+            style="@style/Spinner_Style"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/breadtype_item"
+            style="@style/Spinner_Style"
+           
+            android:layout_alignRight="@+id/multiSpinner"
+            android:layout_below="@+id/multiSpinner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dialog" />
+
+        <Spinner
+            android:id="@+id/meattype_item"
+            style="@style/Spinner_Style"
+            android:background="@drawable/dropdown"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/breadtype_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            
+            android:spinnerMode="dialog" />
+
+        <Spinner
+            android:id="@+id/cheesetype_item"
+            style="@style/Spinner_Style"
+            android:layout_width="fill_parent"
+            android:background="@drawable/dropdown"
+            android:layout_height="40dp"
+            android:layout_below="@+id/meattype_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            
+            
+            android:spinnerMode="dialog" />
+
+        <Spinner
+            android:id="@+id/saasontype_item"
+            style="@style/Spinner_Style"
+            android:layout_width="fill_parent"
+            android:background="@drawable/dropdown"
+            android:layout_height="40dp"
+            android:layout_below="@+id/cheesetype_item"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            
+            android:spinnerMode="dialog" />
+
+     
+
+        
+     <Button
+            android:id="@+id/button_placeorder"
+            style="@style/actionbutton_style"
+            android:layout_below="@+id/saasontype_item"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/placeorder" /> 
+    
+    
+     <Button
+            android:id="@+id/button_cancelorder"
+            style="@style/actionbutton_style_changeorder"
+            android:layout_below="@+id/button_placeorder"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/cancelorder" />
+       
+    </RelativeLayout>
+
+</LinearLayout>

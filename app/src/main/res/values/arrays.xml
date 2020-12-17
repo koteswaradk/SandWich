@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="which_contacts">
+        <item>Calls From All Callers</item>
+        <item>Only From My Contacts</item>
+        <item>Only Starred</item>
+    </string-array>
+    <string-array name="which_contacts_values">
+        <item>all</item>
+        <item>contacts</item>
+        <item>starred</item>
+    </string-array>
+    <string-array name="delay">
+        <item>2 seconds</item>
+        <item>4 seconds</item>
+        <item>6 seconds</item>
+        <item>8 seconds</item>
+        <item>10 seconds</item>
+        <item>12 seconds</item>
+    </string-array>
+     <string-array name="teritory">
+          <item>Please Select The Teritory</item>
+        <item>jayanagara</item>
+        <item>rajajinagara</item>
+        <item>shivajinagara</item>
+        <item>jp nagara</item>
+        <item>vijayanagara</item>
+        <item>kumarapark west</item>
+    </string-array>
+    <string-array name="teritorry_values">
+        <item>Please Select The Company</item>
+        <item>Manyath TechPark</item>
+        <item>ITPL</item>
+        <item>IT Tech Park</item>
+        <item>Global Tech Park</item>
+        <item>Ozone Maniya</item>
+        <item>World Trade center</item>
+        <item>Please Select The Teritory</item>
+        <item>Manyath TechPark</item>
+        <item>ITPL</item>
+        <item>IT Tech Park</item>
+        <item>Global Tech Park</item>
+        <item>Ozone Maniya</item>
+        <item>World Trade center</item>
+        <item>Please Select The Teritory</item>
+        <item>Manyath TechPark</item>
+        <item>ITPL</item>
+        <item>IT Tech Park</item>
+        <item>Global Tech Park</item>
+        <item>Ozone Maniya</item>
+        <item>World Trade center</item>
+        <item>Please Select The Teritory</item>
+        <item>Manyath TechPark</item>
+        <item>ITPL</item>
+        <item>IT Tech Park</item>
+        <item>Global Tech Park</item>
+        <item>Ozone Maniya</item>
+        <item>World Trade center</item>
+        <item>Please Select The Teritory</item>
+        <item>Manyath TechPark</item>
+        <item>ITPL</item>
+        <item>IT Tech Park</item>
+        <item>Global Tech Park</item>
+        <item>Ozone Maniya</item>
+        <item>World Trade center</item>
+        <item>Please Select The Teritory</item>
+        <item>Manyath TechPark</item>
+        <item>ITPL</item>
+        <item>IT Tech Park</item>
+        <item>Global Tech Park</item>
+        <item>Ozone Maniya</item>
+        <item>World Trade center</item>
+    </string-array>
+    <string-array name="Bread_type_sandwich">
+        <item>Garlic bread </item>
+        <item>Garlic cheese bread</item>
+        <item>Southwestern Veggie Wraps</item>
+        <item>Brie and Apple Grilled Cheese</item>
+    </string-array>
+    <string-array name="Vegetable_sandwich">
+        <item>Crispy Tofu Sandwiches with Ginger Peanut Sauce</item>
+        <item>Bourbon Mango Pulled Squash Sandwiches</item>
+        <item>Shiitake Panini with Roasted Asparagus Pesto</item>
+        <item>Roasted Mushroom Melts </item>
+        <item>Eggplant Parmesan Panini</item>
+        <item>Mexican Grilled Cheese Sandwich</item>
+        <item>Mediterranean Loaded Veggie Sandwich</item>
+        <item>Broiled Chèvre Avocado Open Faced Sandwich</item>
+    </string-array>
+    <string-array name="Cheese_type_sandwich">
+        <item>Ipanino cheese</item>
+        <item>tramezzino cheese</item>
+        <item>ciabatta cheese</item>
+        <item> rosetta cheese</item>
+        <item>baguette salami cheese</item>
+        <item>baguette ham cheese</item>
+        <item>baguette cheese</item>
+        <item>baguette mortadella cheese</item>
+    </string-array>
+    <string-array name="Meat_type">
+        <item>Italian beef</item>
+        <item>Jucy Lucy</item>
+        <item>Limburger</item>
+        <item>Beef on weck</item>
+        <item>Big Mac</item>
+        <item>Big N Tasty</item>
+    </string-array>
+    <string-array name="Seasoning">
+        <item>Dill seasoning</item>
+        <item>Pesto seasoning</item>
+        <item>Philly seasonin</item>
+        <item>Luther Burger seasoning</item>
+        <item>Manwich seasoning</item>
+    </string-array>
+
+</resources>

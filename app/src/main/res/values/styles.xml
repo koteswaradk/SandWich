@@ -1,0 +1,298 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+   <!--  <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+       
+    </style> -->
+
+    <style name="MyApp.Theme.Light.NoTitleBar" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:textColorPrimaryInverse">@android:color/primary_text_light</item>
+    </style>
+
+    <!-- Application theme. -->
+  <!--   <style name="AppTheme" parent="AppBaseTheme">
+        All customizations that are NOT specific to a particular API-level can go here.
+    </style> -->
+
+    <style name="DialogUplatform" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
+        <item name="android:textColor">#ff00bfe1</item>
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TitleBar_style">
+        <item name="android:background">@drawable/header</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="TitleBar_style_large">
+        <item name="android:background">@drawable/header</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="TitleBar_style_search">
+        <item name="android:background">#E29334</item>
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#E29334</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Spinner_Style">
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@drawable/dropdown</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:weightSum">1</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="terytory_Spinner_Style">
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@drawable/dropdown</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:weightSum">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="terytory_Spinner_Style_large">
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@drawable/dropdown</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:weightSum">1</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="EditTextStyle">
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:background">@drawable/textbox</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:weightSum">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">05dp</item>
+        <item name="android:layout_marginLeft">05dp</item>
+        <item name="android:layout_marginRight">05dp</item>
+    </style>
+
+    <style name="EditTextStyle_search">
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:weightSum">1</item>
+         <item name="android:layout_marginLeft">40dp</item>
+          <item name="android:layout_marginRight">30dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+  
+    <style name="EditTextStyle_large">
+        
+        <item name="android:background">@drawable/textbox</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:weightSum">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left</item>
+        <item name="android:singleLine">true</item>
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">05dp</item>
+        <item name="android:layout_marginLeft">05dp</item>
+        <item name="android:layout_marginRight">05dp</item>
+    </style>
+
+    <style name="EditTextStyle1">
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:background">@drawable/textbox</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
+        <item name="android:layout_width">170dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:weightSum">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="EditTextStyle1_large">
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:background">@drawable/textbox</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:weightSum">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="actionbutton_style">
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/buttonselect</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="actionbutton_style_large">
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/buttonselect</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">70dp</item>
+    </style>
+
+    <style name="bottom_actionbutton_style">
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/buttonselect</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+      
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="bottom_actionbutton_style_large">
+        <item name="android:focusable">true</item>
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/buttonselect</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">70dp</item>
+    </style>
+
+    <style name="actionbutton_style_changeorder">
+        
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/changeorderselect</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+         <item name="android:fontFamily">sans-serif</item>
+        
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="actionbutton_style_changeorder_large">
+        <item name="android:focusable">true</item>
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/changeorderselect</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">70dp</item>
+    </style>
+
+    <style name="actionbutton_style_synch">
+        <item name="android:focusable">true</item>
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/buttonselect</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textSize">16sp</item>
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_width">140sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="TextViewStyle_large">
+        <item name="android:textSize">20sp</item>
+         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_width">140sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/titlebar"
+            style="@style/TitleBar_style_large"
+            android:layout_width="wrap_content"
+            android:text="@string/details" />
+
+        <ImageButton
+            android:id="@+id/button_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="02dp"
+            android:layout_marginTop="05dp"
+            android:background="@drawable/homebuttonselection"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/name1"
+            style="@style/TextViewStyle_large"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="sample code to test in the text" />
+
+        <TextView
+            android:id="@+id/value1"
+            style="@style/TextViewStyle_large"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/name1"
+            android:text="100000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/name2"
+            style="@style/TextViewStyle_large"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/name1"
+            android:layout_below="@id/name1"
+            android:layout_marginTop="20dp"
+            android:text="sample code to test in the text" />
+
+        <TextView
+            android:id="@+id/value2"
+            style="@style/TextViewStyle_large"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/name1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/name2"
+            android:text="100000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/name3"
+            style="@style/TextViewStyle_large"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/name2"
+            android:layout_below="@id/name2"
+            android:text="sample code to test in the text" />
+
+        <TextView
+            android:id="@+id/value3"
+            style="@style/TextViewStyle_large"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/name2"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/name3"
+            android:text="100000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/name4"
+            style="@style/TextViewStyle_large"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/name2"
+            android:layout_below="@id/name3"
+            android:text="sample code to test in the text" />
+
+        <TextView
+            android:id="@+id/value4"
+            style="@style/TextViewStyle_large"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/name3"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/name4"
+            android:text="100000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/name5"
+            style="@style/TextViewStyle_large"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/name4"
+            android:layout_below="@id/name4"
+            android:text="sample code to test in the text" />
+
+        <TextView
+            android:id="@+id/value5"
+            style="@style/TextViewStyle_large"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/name4"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/name5"
+            android:text="100000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/name6"
+            style="@style/TextViewStyle_large"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/name5"
+            android:layout_below="@id/name5"
+            android:text="sample code to test in the text" />
+
+        <TextView
+            android:id="@+id/value6"
+            style="@style/TextViewStyle_large"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/name5"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/name6"
+            android:text="100000"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/date"
+            style="@style/EditTextStyle1_large"
+            android:hint="Date"
+            android:inputType="date" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/time"
+            style="@style/EditTextStyle1_large"
+            android:layout_toRightOf="@+id/date"
+            android:hint="Time"
+            android:inputType="time" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/questioneries_et"
+            style="@style/EditTextStyle_large"
+            android:layout_below="@+id/time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:hint="Questioneris"
+            android:width="30dp" >
+        </EditText>
+
+        <ToggleButton
+            android:id="@+id/payment_check_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/questioneries_et"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:textOff="Payment Not Received"
+            android:textOn="Payment Received" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/button_change_order"
+            style="@style/actionbutton_style_changeorder_large"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/changeorder" />
+
+        <Button
+            android:id="@+id/button_confirm_order"
+            style="@style/actionbutton_style_large"
+            android:layout_below="@+id/button_change_order"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/confirmorder" />
+
+        <Button
+            android:id="@+id/button_onother_order"
+            style="@style/actionbutton_style_changeorder_large"
+            android:layout_below="@+id/button_confirm_order"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/anotherorder"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

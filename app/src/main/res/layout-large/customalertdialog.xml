@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#008080" >
+    <TextView
+        android:id="@+id/TextView"
+        android:hint="Do You Want To Update Your Details Or Take Order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white" >
+
+        <requestFocus />
+    </TextView>
+
+    <LinearLayout
+                  
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            
+            android:layout_marginTop="10dp">
+                  
+
+     <Button
+         android:id="@+id/button_update_details"
+         android:layout_marginTop="15dp"
+         android:layout_weight="1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/rbtn_selector"
+         android:text="UPDATE DETAILS" 
+         />
+     
+      <Button
+         android:id="@+id/button_take_order"
+         android:layout_marginTop="15dp"
+         android:layout_weight="1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        android:background="@drawable/rbtn_selector"
+         android:text="TAKE ORDER" 
+         />
+    
+     </LinearLayout>
+
+</LinearLayout>

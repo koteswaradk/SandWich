@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/relative_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/titlebar"
+            style="@style/TitleBar_style"
+            android:text="@string/admin" />
+
+        <ImageButton
+            android:id="@+id/button_home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="02dp"
+            android:layout_marginTop="05dp"
+            android:visibility="visible"
+            android:background="@drawable/homebuttonselection" />
+
+    </RelativeLayout>
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/authenticate_et"
+            style="@style/EditTextStyle"
+            android:background="@drawable/securitykey"
+            android:layout_below="@+id/login_username"
+            android:hint="@string/autheticate" >
+        </EditText>
+
+        <Button
+            android:id="@+id/button_autheticae"
+            style="@style/actionbutton_style"
+            android:layout_below="@+id/authenticate_et"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:layout_marginTop="05dp"
+            android:text="@string/autheticate" />
+    </RelativeLayout>
+    
+
+</LinearLayout>
